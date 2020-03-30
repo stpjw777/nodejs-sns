@@ -1,5 +1,5 @@
-module.exports = (sequlize, DataTypes) => {
-  sequlize.define(
+module.exports = (sequelize, DataTypes) =>
+  sequelize.define(
     "user",
     {
       email: {
@@ -30,4 +30,3 @@ module.exports = (sequlize, DataTypes) => {
       paranoid: true
     }
   );
-};

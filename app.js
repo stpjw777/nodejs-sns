@@ -10,6 +10,8 @@ const pageRouter = require("./routes/page");
 const { sequelize } = require("./models");
 
 const app = express();
+
+//sequelize.sync({ force: true });
 sequelize.sync();
 
 app.set("views", path.join(__dirname, "views"));
